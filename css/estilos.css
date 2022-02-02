@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: burlywood;
+}
+/*se modifica para asociar con etiqueta propia html y no con elemento por id*/
+header {
+    background-color: antiquewhite;
+}
+#main-content {
+    background-color:cadetblue;
+}
+#side-content {
+    background-color: chocolate;
+}
+/*se modifica para asociar con etiqueta propia html y no con elemento por id*/
+/*Se modifica el margen inferior para mantener la estética de la página de muestra*/
+footer {
+    background-color: cornflowerblue;
+    margin-bottom: 15px;
+}
+
+table {
+    /* border: 1px solid blue; */
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid gray;
+}
+
+.articulo {
+    background-color: lightsalmon;
+}
+
+textarea::placeholder{
+    color: gray;
+}

@@ -1,0 +1,175 @@
+<!--Jonathan Díaz Palma 1ºASIR TARDE-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content=" ejercicios practicos de html">
+    <meta name="keywords" content="Berners-Lee, excusiones, HTML, CSS, JavaScript">
+    <meta name="author" content="MeViToMeV">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precios AE2.1_JonathanDiazPalma</title>
+    <link rel="shortcut icon" href="../imagenes/favicon-96x96.png" type="image/x-icon" sizes="96x96">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <ul>
+                <li>
+                    <a href="../index.html">Tim Berners-Lee</a>
+                </li>
+                <li>
+                    <a href="portafolios.html">Portafolios</a>
+                </li>
+                <li>
+                    <a href="precios.html">Tabla de Precios</a>
+                </li>
+                <li>
+                    <a href="contactame.html">Contáctame</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <img src="../imagenes/imagen-menu.png" usemap="#mapa">
+            <map name="mapa">
+                <area shape="rect" coords="15,44,108,132" href="../index.html" alt="Inicio">
+                <area shape="circle" coords="172,91,48" href="portafolios.html" alt="Portafolios">
+                <area shape="poly" coords="231,135,288,43,344,135" href="precios.html" alt="Precios">
+                <area shape="rect" coords="352,33,439,140" href="contactame.html" alt="Contacto">
+            </map>
+        </div>
+    </header>
+    <div id="main-content">
+        <h1>
+            Contáctame
+        </h1>
+        <h2>
+            Formulario de Contacto
+        </h2>
+
+        <form name="formulario_contacto" method="post" action="/contactar.php" enctype="multipart/form-data">
+            <div>
+                <fieldset>
+                    <legend>
+                        Datos Personales
+                    </legend>
+                    <p>
+                        <label for="nombre">
+                            Nombre:
+                        </label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Introduce tu nomrbe..." size="40"
+                            required /> <abbr title="Campo obligatorio">*</abbr>
+                    </p>
+                    <p>
+                        <label for="apellidos">
+                            Apellidos:
+                        </label>
+                        <input type="text" name="apellidos" id="apellidos" placeholder="Introduce tu apellido..."
+                            size="40" required /> <abbr title="Campo obligatorio">*</abbr>
+                    </p>
+                    <p>
+                        <label for="correo">
+                            Email:
+                        </label>
+                        <input type="text" name="correo" id="correo" size="20" required
+                            pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" /> <abbr
+                            title="Campo obligatorio">*</abbr>
+                    </p>
+                    <p>
+                        <label for="nacimiento">
+                            Fecha de Nacimiento:
+                        </label>
+                        <input type="date" name="nacimiento" id="nacimiento" value="23/10/2021" />
+                    </p>
+                    <p>
+                        <label for="edad">
+                            Edad:
+                        </label>
+                        <input type="number" name="edad" id="edad" value="" min="10" max="100" />
+                    </p>
+                    <p>
+                        Sexo:
+                        <label for="masculino">
+                            <input type="radio" name="sexo" id="masculino" checked />Hombre
+                        </label>
+                        <label for="femenino">
+                            <input type="radio" name="sexo" id="femenino" />Mujer
+                        </label>
+                    </p>
+                    <p>
+                        <label for="pais">
+                            País
+                        </label>
+                        <select name="pais" id="pais">
+                            <option value="" selected>
+                                -Selecciona-
+                            </option>
+                            <option value="espanha">
+                                España
+                            </option>
+                            <option value="francia">
+                                Francia
+                            </option>
+                            <option value="portugal">
+                                Portugal
+                            </option>
+                            <option value="italia">
+                                Italia
+                            </option>
+                        </select>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>
+                        Otros Datos
+                    </legend>
+                    <p>
+                        <label for="mensaje">
+                            Mensaje:
+                        </label>
+                        <textarea name="mensaje" id="mensaje" placeholder="Introduce tu mensaje..." rows="10" cols="50">
+                        </textarea>
+                    </p>
+                    <p>
+                        Adjunta una foto...
+                        <input type="file" name="foto" id="foto" accept=".jpg,.png,.gif" multiple />
+                    </p>
+                </fieldset>
+
+                <p>
+
+                    <input type="checkbox" name="condiciones" id="condiciones" checked required />
+                    <label for="condiciones">
+                        He leído las condiciones...
+                    </label>
+                </p>
+                <p>
+                    <input type="reset" value="Limpiar">
+                    <input type="submit" value="Enviar">
+                </p>
+            </div>
+        </form>
+        <div id="side-content">
+            <h1>
+                Centro de referencia
+            </h1>
+            <p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.7795771531537!2d-16.28545688554772!3d28.456060298798207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc41cceee5a8035f%3A0xab9f2a74d9e68b51!2sCIFP%20C%C3%A9sar%20Manrique!5e0!3m2!1ses!2ses!4v1643458569101!5m2!1ses!2ses"
+                    width="800" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </p>
+        </div>
+
+    </div>
+    <footer>
+        <div>
+            <strong>&#169; 2040</strong> <a href="../index.html">www.MiSitio.com</a>
+        </div>
+    </footer>
+</body>
+
+</html>
